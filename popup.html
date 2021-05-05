@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<form>
+    <div>
+        <label for="length">Password length:</label>
+        <input type="number" name="length" id="length" min="0" max="200" value="15">
+    </div>
+
+    <div>
+        <label for="symbols">Exclude symbols:</label>
+        <input type="checkbox" name="symbols" id="symbols">
+    </div>
+
+    <button type="submit" id="submit" onclick="console.log('clicked')">Generate</button>
+    
+</form>
+
+<div>
+    <p id="result">_____</p>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
